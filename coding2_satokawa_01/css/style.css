@@ -1,0 +1,147 @@
+@charset "utf-8";
+nav {
+    width: 960px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* インラインの性質を保ちながら、ブロックレベルの性質を加えている */
+    padding: 0 0 0 22px;
+    text-align: center;
+    line-height: 1; /* 行の高さ */
+  }
+
+h1 {
+    float: left;
+    font-size: 30px;
+    padding: 20px 30px;
+}
+
+h1 a:hover{
+    color: #78a9be;
+}
+
+ul {
+    width: 60%;
+    float: right;
+    padding: 25px 30px 25px 30px ;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+ul li {
+    display: inline-block; /* インラインの性質を保ちながら、ブロックレベルの性質を加えている */
+    margin-left: 6px;
+    border-left: 1px solid gray;
+}
+
+ul li:first-child {
+    border-left: none; /* 最初のliから左の境界線を消す */
+  }
+
+li a:hover {
+    color: #78a9be;
+}
+
+.box_area {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 960px;
+    display: flex;
+    /* gap: 3%; */
+    justify-content: space-between;
+}
+
+.box_item {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}
+
+.box_area_red {
+    margin: 0 auto;
+    width: 960px;
+    display: grid;
+    grid-template-columns: 300px 300px 100px;
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 3% 3%;
+}
+
+.box_red {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+footer {
+    width: 100%;
+    height: 12px;
+    margin-top: 80px;
+    padding: 10px 0;
+    background-color: #b8b8b8;
+}
+
+footer p {
+    color: #FFF;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+
+body {
+    display: block;
+    width: 100%;
+}
+
+nav {
+width: 100%;
+height: 120%;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0 10px;
+    padding: 15px 0 5px 15px;
+}
+
+ul {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    padding: 0px 15px 25px 30px;
+}
+
+ul li {
+    border-left: none;
+}
+
+li {
+    border-bottom: gray 1px solid;
+    padding: 2% 0;
+    margin: 0 10%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 5px;
+    line-height: 2;
+    text-align: left;
+    margin: 0 0px 0 40px;
+}
+
+.box_area, .box_area_red {
+    width: 90%;
+    display: flex;
+    row-gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: 30px;
+}
+}
