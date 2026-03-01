@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kadai_3 for構文</title>
+</head>
+<body>
+    <script>
+
+        // for文を使って1+2+3+4…の状況を作る。
+        // すべての足し算をしたうえでif文を使って条件分岐で出力を決める
+
+        let sum = 0;
+        for (let i = 1; i <= 10; i++) {
+        sum = sum + i;
+        }
+
+        // 変数iが1から10になるまで繰り返す
+        // 1+2+3+4+5+6+7+8+9+10=55　　∴ 20以上
+
+        if (sum >= 20) {
+        console.log("20以上");
+        } else {
+        console.log("20以下");
+        }
+
+    </script>
+</body>
+</html>
